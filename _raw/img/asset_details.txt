@@ -1,0 +1,13 @@
+Logo / handwriting:
+
+SketchBook with Chisel Tip Pen, size 8.5, 100% opacity
+
+HSL 222/0/20
+
+Save to PNG, import to Gimp, use magic select with feather radius 1 to remove background
+
+
+Background:
+
+Pulled from here: https://unsplash.com/photos/GQD3Av_9A88
+Cropped to 1200 high, and split into 5 equal pieces (1190 px wide) so that scaling keeps them in proportion.

@@ -1,0 +1,20 @@
+<nav>
+
+  {% if page.section %}
+  {% assign bg_suffix = "_edged" %}
+  {% assign label_suffix = "_left" %}
+  <a href="/" id="site_logo">
+    <img src="/assets/img/logo_initials.png" />
+  </a>
+  {% endif %}
+
+  {% for item in site.data.nav %}
+  <a href="{{ item.path }}" id="nav_{{ item.key }}" class="item {{ item.key }} {% if item.key == page.section %}active{% endif %}">
+    <img src="/assets/img/{{ item.img }}{{ bg_suffix }}.png" class="bg" />
+    <div class="label">
+      <img src="/assets/img/{{ item.key }}{{ label_suffix }}.png" />
+    </div>
+  </a>
+  {% endfor %}
+
+</nav>

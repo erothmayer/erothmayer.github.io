@@ -1,0 +1,102 @@
+nav {
+  display: flex;
+
+  width: 100%;
+
+  /* TODO better fix for this */
+  font-size: 0rem; /* fix junk line breaks in 'a' tags */
+
+  .item {
+    position: relative; /* anchor for absolute position of label div */
+
+    img.bg {
+      width: 100%; /* fit bg images to their flex container widths */
+    }
+
+    .label {
+      /* float the label container div over the entire image */
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+
+      /* and push the image to the center bottom */
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+      img {
+        width: 75%;
+      }
+    }
+  }
+}
+
+header nav {
+  height: 100%;
+  max-width: 128rem;
+  justify-content: space-between;
+  align-items: center;
+
+  #site_logo {
+    margin: 0rem 1rem;
+    height: 80%;
+    align-self: center;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .item {
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    .bg {
+      /* when inside the header, squash the images to fit vertically instead */
+      width: auto;
+      height: 100%;
+    }
+
+    .label {
+      position: relative;
+      display: flex;
+
+      img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 65%;
+
+        transition: max-height 0.2s;
+      }
+    }
+
+    &:hover {
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      margin-bottom: -1px;
+
+      .label {
+        img {
+          max-height: 80%;
+        }
+      }
+    }
+
+    &.active {
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      margin-bottom: -2px;
+    }
+
+    &.about { border-bottom-color: #fb980d; }
+    &.work { border-bottom-color: #d33702; }
+    &.projects { border-bottom-color: #72a30a;}
+    &.writing { border-bottom-color: #ae3e5a; }
+    &.contact { border-bottom-color: #dcb200; }
+  }
+}

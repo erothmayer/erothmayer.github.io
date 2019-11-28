@@ -1,0 +1,8 @@
+// see: https://medium.com/@elad/normalize-css-or-css-reset-9d75175c5d1e
+//
+// TODO if this doesn't work right, consider:
+// https://cssreset.com/scripts/html5-doctor-css-reset-stylesheet/
+
+@import 'resets/normalize';
+@import 'resets/local';
+@import 'resets/typography';

@@ -1,0 +1,31 @@
+#home {
+  flex-grow: 1;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: center;
+
+
+  flex-wrap: wrap;
+
+  & > div {
+    max-width: 70%;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  #logo {
+    max-width: 45rem;
+  }
+
+  #me {
+    width: 40%;
+    max-width: 20rem;
+    border-radius: 50%;
+  }
+}

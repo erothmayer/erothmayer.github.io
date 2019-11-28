@@ -1,0 +1,29 @@
+---
+# required front-matter for Jekyll
+---
+@import 'resets';
+
+html, body {
+  height: 100%; /* stretch the canvas to the viewport size */
+}
+
+body {
+  // font-family: 'Proza Libre', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
+  color: #333333;
+  background-color: #f3f3f3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@import 'layout';
+@import 'nav';
+@import 'home';
+@import 'page';

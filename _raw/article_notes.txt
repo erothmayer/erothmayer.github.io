@@ -1,0 +1,19 @@
+notes:
+
+jekyll docker setup, avoid bundles (it reinstalls everything, dunno why)
+gulp for browsersync with gulp v4 syntax
+
+
+Let's build a website
+Simple static system, free hosting -- gh pages
+Automatic build integration -- Jekyll (0 config build/deploy)
+
+Limitations: Jekyll version / speed; localization; no server support (no growth path)
+
+Pros: great documentation, built-in support; competitors have iffy docs and steep learning curve
+
+Dev setup
+- VSCode / docker
+- Jekyll in Docker
+- Browser-Sync for debugging / fast reloads
+- CodeRay in config (https://stackoverflow.com/questions/19332876/is-it-possible-to-use-coderay-in-github-pages)

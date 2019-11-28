@@ -4,7 +4,11 @@
 @import 'resets';
 
 html, body {
-  height: 100%; /* stretch the canvas to the viewport size */
+  min-height: 100%; /* stretch the canvas to the viewport size */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 body {
@@ -14,9 +18,8 @@ body {
   color: #333333;
   background-color: #f3f3f3;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  flex-grow: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {

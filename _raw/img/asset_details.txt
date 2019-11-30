@@ -11,3 +11,10 @@ Background:
 
 Pulled from here: https://unsplash.com/photos/GQD3Av_9A88
 Cropped to 1200 high, and split into 5 equal pieces (1190 px wide) so that scaling keeps them in proportion.
+
+
+For image rescaling, size things down to something close to a reasonable max using these instructions:
+https://photodoto.com/sharp-images-for-the-web/
+
+Right now just eyeballing the color / brightness / saturation
+Doing the double sharpen, and taking opacity on the top layer down to about 40% seems right
